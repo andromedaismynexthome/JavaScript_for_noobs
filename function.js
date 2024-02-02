@@ -10,7 +10,7 @@ sayHello()
 function add(a,b){
     return a + b
 }
-
+//         parameter
 let a = add(5,2) 
 console.log(a)
 
