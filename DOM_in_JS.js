@@ -9,25 +9,45 @@
  * - class .
  */
 
-const body = document.querySelector("body");
-body.innerHTML = "<h1>heelo</h1>"
+const body = document.querySelector("body").children;
+//body.innerHTML = "<h1>heelo</h1>"
 
 
 //Select element by ID
 
-const el = document.getElementById('h');
-el.innerText = "ballw";
+//const el = document.getElementById('h');
+//el.innerText = "ballw";
 
 
 // get element by class name
 
-const element = document.getElementByClassName("block");
+//const element = document.getElementsByClassName("block");
 
 
 //event listners
 
-function handk(){
-alert('hahahha');
+//function handk(){
+//alert('hahahha');
+//}
+/*const cl = document.getElementById("click");
+cl.onclick = () =>{
+	console.log("i cli");
+	handk();
+};
+*/
+ 
+//const cl = document.getElementById("click");
+/*cl.addEventListener("click", ()=>{
+ body.style.backgroundColor = 'blue';
+});
+*/
+
+for (let i = 0; i < body.length; i++){
+body.item(i).addEventListener("click", () => {
+body.item(i).remove();
+});
+
 }
-const l = document.getElementById("click");
-l.onclick = () => console.log("i cli");
+
+
+
